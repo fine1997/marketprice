@@ -83,7 +83,6 @@
       margin: 6px 0;
     }
 
-    /* Stroke styles for better visibility */
     #container1 .text-line {
       -webkit-text-stroke: 0.6px #003b7a;
     }
@@ -192,6 +191,11 @@
 
     updateContainers();
     setInterval(nextContainer, 10000); // every 10 seconds
+
+    // Auto refresh every 3 seconds
+    setTimeout(() => {
+      location.reload();
+    }, 30000);
   </script>
 </body>
 </html>
